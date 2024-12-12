@@ -25,6 +25,7 @@ const uint8_t PAD_RD = 0x10;
 const uint8_t CAB_SERVICE = 0x40;
 const uint8_t CAB_TEST = 0x02;
 const uint8_t CAB_COIN = 0x04;
+const uint8_t CAB_CLEAR = 0x80;
 
 uint8_t IOSTATE[4] = { 0xFF, 0xFF, 0xFF, 0xFF };
 
@@ -51,6 +52,7 @@ const std::list<piu_bind> binds = {
 
     { "F1", STATE_CAB_PLAYER_1, CAB_TEST },
     { "F2", STATE_CAB_PLAYER_1, CAB_SERVICE },
+    { "F3", STATE_CAB_PLAYER_1, CAB_CLEAR },
 };
 
 bool is_real_pad_connected = false;
