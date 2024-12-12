@@ -8,7 +8,7 @@ Tested on Pump It Up Prime. To modify the keys, edit the `binds` list in `hook.c
 Download the pre-compiled binary or compile it, then add it to LD_PRELOAD before executing Prime.
 
 # Default keys
-F1 for test, F2 for service, F5 for player 1 coin, F6 for player 2 coin
+F1 for test, F2 for service, F3 for coin clear, F5 for player 1 coin (coin 1), F6 for player 2 coin (coin 2)
 
 Pad layout:
 ```
@@ -26,7 +26,7 @@ To compile it yourself, run these commands:
 
 ```
 sudo apt-get install git build-essential libx11-dev
-git clone https://github.com/therathatter/piu-kb-hook
+git clone https://github.com/PolaX3/piu-kb-hook
 cd piu-kb-hook
 make
 ```
